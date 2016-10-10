@@ -33,7 +33,15 @@ setup(
 		maintainer_email = 'dtw@a9.com',
 		url = 'https://github.com/blindsightcorp/rigor',
 		license = 'BSD License',
-		install_requires = ['SQLAlchemy >= 0.7.6', 'alembic >= 0.7.3'],
+		install_requires = [
+			'SQLAlchemy >= 0.7.6',
+			'alembic >= 0.7.3',
+			'boto',
+			'simplejson',
+			'python-dateutil',
+			'pytz',
+			'opencv-python'
+		],
 		tests_require = ['pytest >= 2.5.2', 'moto >= 0.4'],
 		cmdclass = {'test': PyTest, },
 		packages = ('rigor', ),
